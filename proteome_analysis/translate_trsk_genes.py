@@ -14,12 +14,13 @@ from Bio.Seq import Seq
 from Bio.Alphabet import SingleLetterAlphabet
 from gfftools import GFFParser, helper
 from signal_labels import generate_genome_seq_labels as seqlab
-import pdb
 import os
 import re
 
 def translate_trsk_genes(gtf_file, fas_file, out_seq_fname, max_orf_opt = False):
-    """ translate the trsk genes to protein sequence @args gtf_file: genome annotation file @type gtf_file: str
+    """ translate the trsk genes to protein sequence 
+    @args gtf_file: genome annotation file 
+    @type gtf_file: str
     @args fas_file: genome sequence file
     @type fas_file: str
     @args out_seq_fname: output file in fasta format 
